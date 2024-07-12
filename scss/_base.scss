@@ -1,0 +1,256 @@
+// variables
+$font-inter: 'Inter', sans-serif;
+$font-popins: 'Poppins', sans-serif;
+$font-gilroy: 'Gilroy';
+$font-comicSans: 'LDFComicSans';
+$font-marker: 'Marker Felt';
+$font-gotham: 'Gotham Ultra';
+$font-times: 'Times New Roman Cyr';
+$font-impact: 'Impact';
+$font-din: 'DIN';
+$font-lazer84: 'lazer84';
+$font-bariol: 'Bariol Serif';
+
+
+$font-13:13px;
+$font-14:14px;
+$font-15:15px;
+$font-16:round(($font-14 * 1.1428));
+$font-18:round(($font-14 * 1.2857));
+$font-20:round(($font-14 * 1.42857));
+$font-22:round($font-14 * 1.5714);
+$font-24:round(($font-14 * 1.7142));
+$font-28:round(($font-14 * 2 ));
+$font-30:round(($font-14 * 2.1428));
+$font-36:round(($font-14 * 2.5714));
+$font-38:round(($font-14 * 2.7142));
+$font-40:round(($font-14 * 2.8571));
+$font-42:round(($font-14 * 3));
+$font-44:round(($font-14 * 3.1428));
+$font-46:round(($font-14 * 3.2857));
+$font-48:round(($font-14 * 3.4285));
+
+
+// font weight
+$font-weight-300:300;
+$font-weight-400:400;
+$font-weight-500:500;
+$font-weight-700:700;
+$font-weight-800:800;
+
+
+// colors
+$white_color:#fff;
+$black_color:#000000;
+$theme_color:#122FFF;
+$light_blue: #3C56FF;
+$dark_blue: #051AFF;
+$shade_blue: #0052B4;
+$text_color:#454545;
+$gray_color:#00000029;
+$bg_color:#7C89FE19;
+
+
+  /*------------ base CSS ------------*/ 
+body,
+html {
+  height: 100%;
+  position: relative;
+  background: $white_color;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none; 
+ }
+ a {
+    color:$black_color;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    &:hover , &:focus{
+        text-decoration: none;
+    }
+}
+
+
+body {
+    background: $white_color;
+    color:$text_color;
+    font-size:$font-13;
+    line-height: 18px;
+    font-family: $font-inter;
+    font-weight: $font-weight-400;
+    font-style: normal;
+}
+
+  /*------------ GLobal Settings: Heading-------------*/ 
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color:$black_color;
+    font-family: $font-popins;
+    font-weight: $font-weight-700;
+    font-style: normal;
+}
+
+  
+h1 {
+    font-size: $font-30;
+    line-height: 32px;
+ }
+  
+  h2 {
+    font-size: $font-30;
+    line-height: 32px;
+ }
+  
+  h3 {
+    font-size: $font-28;
+    line-height: 30px;
+ }
+  
+  h4 {
+    font-size: $font-18;
+    line-height: 20px;
+ }
+  
+  h5 {
+    font-size: $font-15;
+    line-height: 32px;
+  }
+  
+  h6 {
+    font-size: $font-14;
+    line-height: 18px;
+  }
+  
+  html body .dl {
+    display: inline-block; }
+  
+  html body .db {
+    display: block;
+ }
+
+ .text-blue{
+    color: $dark_blue;
+ }
+ .font-regular{
+    font-weight: $font-weight-400;
+ }
+ .font-bold{
+    font-weight: $font-weight-700;
+ }
+ .font-extra-bold{
+    font-weight: $font-weight-800;
+ }
+    .font--poppins{
+        font-family:$font-popins;
+        letter-spacing: 0.18px;
+        font-weight: $font-weight-800;
+    }
+    .font--comicSans{
+        font-family:$font-comicSans;
+        letter-spacing: 0.18px
+    }
+    .font--gilroy{
+        font-family:$font-gilroy;
+        letter-spacing: 0.18px;
+    }
+    .font--marker{
+        font-family:$font-marker;
+        letter-spacing: 0.18px;
+    }
+    .font--times{
+        font-family:$font-times;
+        letter-spacing: 0.23px;
+    }
+    .font--impact{
+        font-family:$font-impact;
+        letter-spacing: 0.18px;
+    }
+    .font--din{
+        font-family:$font-impact;
+        letter-spacing: 0.18px;
+    }
+    .font--lazer84{
+        font-family:$font-lazer84;
+        letter-spacing: 0.18px;
+    }
+    .font--bariol{
+        font-family:$font-bariol;
+        letter-spacing: 0.18px;
+    }
+    .font--gotham{
+        font-family:$font-gotham;
+        letter-spacing: 0.22px;
+    }
+
+    // btn 
+
+    .btn {
+        border-radius: 5px;
+        line-height: 40px;
+        padding: 0 10px;
+        font-family: $font-popins;
+        font-weight: $font-weight-700;
+        letter-spacing: 0.08px;
+        color: $white_color;
+        font-size: $font-13;
+    }
+
+    .btn.btn--text{
+        color: $theme_color;
+        line-height: 1;
+        text-align: left;
+        border: 0;
+        &:hover , &:focus{
+           border: 0;
+        }
+    }
+
+    .btn--primary{
+        background: $theme_color 0% 0% no-repeat padding-box;
+        &:hover , &:focus{
+            background: $black_color 0% 0% no-repeat padding-box;
+            color: $white_color;
+        }
+    }
+
+    .btn--secondary{
+        background: $black_color 0% 0% no-repeat padding-box;
+        &:hover , &:focus{
+            background: $theme_color 0% 0% no-repeat padding-box;
+            color: $white_color;
+        }
+    }
+
+    .btn-outline--primary{
+
+        color: $theme_color;
+        border: 1px solid $theme_color;
+
+        &:hover , &:focus{
+            color: $black_color;
+        border: 1px solid $black_color;
+        }
+
+    }
+    .btn-outline--secondary{
+        color: $black_color;
+        border: 1px solid $black_color;
+
+        &:hover , &:focus{
+            color: $theme_color;
+            border: 1px solid $theme_color;
+        }
+
+    }
+
+    .slick-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .slick-btn svg{
+        width: 20px;
+        height: 20px;
+    }

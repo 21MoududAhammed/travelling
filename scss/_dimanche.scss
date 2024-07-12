@@ -1,0 +1,399 @@
+//============================================ DIMANCHE May 26 start================================================
+
+
+.side_menu{
+    .sub_icon2{
+        display: flex;
+        align-items: center;
+        .side_icon{
+            width: 36px;
+            height: 35px;
+            border: 1px solid #ca5;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            transform: translateY(0px) rotate(-40deg);
+        i{
+            font-size: 14px;
+            color: $black_color;
+            color: #ca5;
+
+        }
+        }
+        
+            a:hover{
+                cursor: pointer;
+                color: $black_color;
+            }
+        
+    }
+    .toggle_bar{
+        display: block;
+        cursor: pointer;
+        display: block;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        padding: 10px 5px 9px 4px;
+        margin-left: 0px;
+        .bar:nth-child(1){
+            transform: translateX(0px) rotate(90deg);
+            background-color: #627e8c;
+            width: 14px;
+        }
+        .bar:nth-child(2){
+            transform: translateY(-7px) rotate(180deg);
+            width: 15px;
+        }
+        .bar{
+            display: block;
+            width: 20px;
+            height: 2px;
+            margin: 5px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #627e8c;
+        }
+    }
+    .toggle_bar:hover{
+        border: 1px solid #2A79A6;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    .toggle_bar.active .bar:nth-child(1){
+        opacity: 0;
+    }
+    .sub_menu2{
+        position: relative;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.5s ;
+        overflow-y: auto;
+        margin-left: 20px;
+        .sub_icon:hover{
+            background-color: #ECF8FF;
+            color: #2A79A6;
+            transition: 0.3s;
+        }
+    }
+    .sub_menu2.active{
+        height: 100px;
+    }
+    .sub_icon2:hover{
+        background-color: #ECF8FF;
+         color: #2A79A6;
+    }
+    .menu_item{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+        line-height: 1px;
+
+    }
+    .menu_item p:nth-child(1){
+        font-size: 14px;
+        font-weight: 100;
+
+    }
+    .depart{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        line-height: 25px;
+    }
+    .depart span:nth-child(1){
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+ // =================================================================== content=============================================================
+.dimanche{
+    position: relative;
+    #time.active{
+        // border: 1px solid #396 ;
+        // background-color: red !important;
+    }
+    .dimanche_title{
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        line-height: 1.5;
+        color: $black_color;
+        padding-left: 65px;
+        margin: 28px 0px;
+    }
+    .dimanche_title::before{
+        content: "";
+        width: 65px;
+        height: 1px;
+        background-color: #d7dfe3;
+        color: #d7dfe3;
+        position: absolute;
+        left: 0;
+        top: 15px;
+    }
+    .dimanche_title::after{
+        content: "";
+        width: 355px;
+        height: 1px;
+        background-color: #d7dfe3;
+        color: #d7dfe3;
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+    .plane_icon{
+        width: 36px;
+        height: 35px;
+        border: 1px solid #ca5;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        transform: translateY(0px) rotate(-40deg);
+        i{
+            font-size: 14px;
+            color: $black_color;
+            color: #ca5;
+
+        }
+
+    }
+    .diman_title{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .dimanche_devis{
+            font-size: 18px;
+            font-weight: 300;
+            text-decoration: none;
+            line-height: 1.5;
+            color: #ca5;
+            padding: 15px 0px;
+            i{
+                font-size: 15px;
+                color: #ca5;
+                transform: translateY(0px) rotate(-45deg);
+            }
+        }
+    }
+    .depart_title{
+        text-align: left;
+        margin: 15px 0px;
+        padding: 10px;
+        border-bottom: 1px solid #d7dfe3;
+        span{
+            font-size: 17px;
+            color: $black_color;
+            font-weight: 300;
+            text-decoration: none;
+
+        }
+    }
+    .flight{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15px 0px 20px 0px ;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #d7dfe3;
+        flex-wrap: wrap;
+        gap: 20px;
+        .airline{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .airline span:nth-child(1){
+            font-size: 14px;
+            color: rgba(5,37,48,.5);
+
+        }
+        .airline span:nth-child(2){
+            font-size: 18px;
+            color: $black_color;
+
+        }
+    }
+
+
+    .dubai_airport{
+        display: flex;
+        gap: 0px;
+        transition: all 0.5s ease;
+        height: 90px;
+        .airport_image{
+            width: 80px;
+            height: 90px;
+            img{
+                width: 100%;
+                height: 90px;
+                border-radius: 5px 5px 5px 5px;
+            }
+        }
+        .airport_title{
+            margin: auto 2px;
+            text-align: left;
+            width: 400px;
+            line-height: 25px;
+            padding: 0px 5px;
+
+
+        }
+        .arrows{
+            width: 50px;
+            text-align: right;
+
+        }
+        .airport_title span:nth-child(1){
+            color: $black_color;
+            padding: 0px 0px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .airport_title span:nth-child(2){
+            text-decoration: underline #2A79A6;
+            color: #7d97a4;
+            a{
+                padding: 0px 0px 0px 0px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
+            }
+            a:hover{
+                cursor: pointer;
+                color: #45bbff !important;
+                transition: all 0.5s ease;
+            }
+        }
+        .airport_title span:nth-child(3){
+            text-decoration: underline #2A79A6;
+            color: #7d97a4;
+            a{
+                padding: 0px 0px 0px 0px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
+            }
+            a:hover{
+                cursor: pointer;
+                color: #45bbff !important;
+                transition: all 0.5s ease;
+            }
+            
+        }
+        .arrows{
+            margin: auto;
+            font-size: 20px;
+            color: #7d97a4;
+        }
+    }
+    .dubai_airport:hover{
+        transform: scale(1.03);
+        cursor: pointer;
+        box-shadow: 0 .5rem 2rem -.5rem rgba(28, 75, 102, .4)
+    }
+    .parent_div{
+        padding: 10px 0px 40px 65px;
+        margin-bottom: 5px;
+    }
+}
+ // =================================================================== content=============================================================
+
+ @media only screen and (max-width: 390px) {
+
+    .dimanche .dimanche_title::after {
+        width: 110px;
+    }
+
+    .dimanche .diman_title .dimanche_devis {
+        font-size: 14px;
+    }
+    .dimanche .parent_div {
+        padding: 10px 0px 40px 70px;
+    }
+    .dimanche .depart_title {
+        text-align: left;
+        margin: -16px 0px 18px -10px;
+        padding-bottom: 10px;
+    }
+    .dimanche .dubai_airport .airport_image {
+        height: 100px;
+    }
+    .dimanche .dubai_airport .airport_image img {
+        height: 90px;
+    }
+    .dimanche .dubai_airport .airport_title span:nth-child(1) {
+        padding: 0px;
+        margin: 5px 0px;
+    }
+    .dimanche .dubai_airport .airport_title span:nth-child(2) a {
+        padding: 0px;
+        margin: 9px 0px;
+    }
+    .dimanche .dubai_airport .airport_title {
+        width: 143px;
+    }
+ }
+ @media only screen and (max-width: 1024px) {
+
+    .dimanche .dimanche_title::after {
+        width: 110px;
+    }
+
+    .dimanche .diman_title .dimanche_devis {
+        font-size: 14px;
+    }
+    .dimanche .parent_div {
+        padding: 10px 0px 40px 70px;
+    }
+    .dimanche .depart_title {
+        text-align: left;
+        margin: -16px 0px 18px -10px;
+        padding-bottom: 10px;
+    }
+    .dimanche .dubai_airport .airport_image {
+        height: auto;
+    }
+    .dimanche .dubai_airport .airport_image img {
+        height: 90px;
+    }
+    .dimanche .dubai_airport .airport_title span:nth-child(1) {
+        padding: 0px;
+        margin: 5px 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+    }
+    .dimanche .dubai_airport .airport_title span:nth-child(2) a {
+        padding: 0px;
+        margin: 9px 0px;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .dimanche .dubai_airport .airport_title {
+        width: 180px;
+    }
+    .dimanche .dubai_airport .arrows {
+        width: 10px;
+    }
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+    .dimanche .dimanche_title::after {
+        width: 420px;
+    }
+
+ }
+
+//============================================ DIMANCHE May 26 end================================================
